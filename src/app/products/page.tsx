@@ -4,7 +4,7 @@ export default function ProductsPage() {
       <section className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-10 text-center">Our Products</h1>
         <p className="text-lg text-center mb-6">
-          Our models communicate via WiFi or LTE connection.
+          Our models communicate via WiFi or LTE connection depending on your needs. Price includes hardware, installation, and setup.
         </p>
 
         <ul className="space-y-8">

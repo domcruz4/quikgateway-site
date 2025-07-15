@@ -34,13 +34,13 @@ export default function Home() {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
-              <p>Native support for MQTT to connect your ESP32, PLCs, or sensors effortlessly.</p>
+              <p>Native support for MQTT to connect your PLC, field devices, or sensors effortlessly.</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
-              <p>Each customer gets their own branded Grafana dashboard with secure access.</p>
+              <p>Each customer gets their own branded dashboards to view live machine status KPIs in real time.</p>
             </CardContent>
           </Card>
         </div>
@@ -56,11 +56,11 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
-            <p>Monitor status, uptime, and performance instantly—right from your phone or desktop using beautiful Grafana dashboards.</p>
+            <p>Monitor status, uptime, and performance instantly—right from your phone or desktop using beautiful dashboards.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Zero Coding Required</h3>
-            <p>Designed for plant managers and maintenance techs, not programmers. No code. No complexity. Just data.</p>
+            <p>Designed for plant operations and maintenance, not programmers. No code. No complexity. Just data.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Secure & Private</h3>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Flat Monthly Pricing</h3>
-            <p>No surprises. $99/month per company. Add more devices for just $20/month each after 10.</p>
+            <p>No surprises. Plans from $49/month per device or up to 10 for only $199/month. Add more devices for just $20/month each.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
