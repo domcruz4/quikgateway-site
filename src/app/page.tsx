@@ -52,7 +52,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
           <div>
             <h3 className="text-xl font-semibold mb-2">Plug-and-Play Setup</h3>
-            <p>Get up and running in minutes with our pre-configured IIoT gateway that connects directly to your devices.</p>
+            <p>Get up and running in minutes with our pre-configured IIoT gateway that connects directly to field device wiring or PLC.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
@@ -68,11 +68,11 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Flat Monthly Pricing</h3>
-            <p>No surprises. Plans from $49/month per device or up to 10 for only $199/month. Add more devices for just $20/month each.</p>
+            <p>No surprises. Plans from $49/month per device or up to 10 for only $199/month. Add more devices for just $20/month each additional device after.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
-            <p>Run by automation pros who understand your shop floor. We help you set up and troubleshoot every step of the way.</p>
+            <p>Run by automation pros who understand your production floor. We help you set up so you can start viewing live data quickly.</p>
           </div>
         </div>
       </section>
