@@ -53,8 +53,8 @@ export default function Home() {
     style={{ backgroundImage: "url('/dashboard.jpg')" }}
   />
 
-  {/* Centered overlay: 70% height, centered vertically */}
-  <div className="absolute left-0 right-0 top-[15%] h-[70%] bg-black/50" />
+  {/* Centered overlay: 65% height, top offset 17.5% */}
+  <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50" />
 
   {/* Text content */}
   <CardContent className="relative z-10 p-6">
