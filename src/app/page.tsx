@@ -110,33 +110,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-16 px-6 bg-gray-100">
-        <h2 className="text-3xl font-semibold text-center mb-8">Get in Touch</h2>
-        <form
-          action="https://formsubmit.co/joe@quikgateway.com"
-          method="POST"
-          className="grid gap-4 max-w-xl mx-auto"
-        >
-          <Input type="text" name="name" placeholder="Your Name" required />
-          <Input type="email" name="email" placeholder="Your Email" required />
-          <Input type="text" name="company" placeholder="Company Name" />
-          <textarea
-            name="message"
-            placeholder="Message"
-            className="border rounded p-2"
-            rows={4}
-            required
-          ></textarea>
-          <input type="hidden" name="_captcha" value="false" />
-          <Button
-  type="submit"
-  className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900"
+{/* Contact Form */}
+<section
+  className="relative py-16 px-6 text-white bg-cover bg-center"
+  style={{ backgroundImage: "url('/touch.jpeg')" }}
 >
-  Submit
-</Button>
-        </form>
-      </section>
+  {/* Optional dark overlay */}
+  <div className="absolute inset-0 bg-black/50 z-0" />
+
+  {/* Content on top */}
+  <div className="relative z-10">
+    <h2 className="text-3xl font-semibold text-center mb-8">Get in Touch</h2>
+    <form
+      action="https://formsubmit.co/joe@quikgateway.com"
+      method="POST"
+      className="grid gap-4 max-w-xl mx-auto"
+    >
+      <Input type="text" name="name" placeholder="Your Name" required />
+      <Input type="email" name="email" placeholder="Your Email" required />
+      <Input type="text" name="company" placeholder="Company Name" />
+      <textarea
+        name="message"
+        placeholder="Message"
+        className="border rounded p-2 text-black"
+        rows={4}
+        required
+      ></textarea>
+      <input type="hidden" name="_captcha" value="false" />
+      <Button
+        type="submit"
+        className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900"
+      >
+        Submit
+      </Button>
+    </form>
+  </div>
+</section>
 
       {/* Dashboard Link */}
       <section className="py-16 px-6 text-center bg-white">
