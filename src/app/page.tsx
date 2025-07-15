@@ -33,12 +33,12 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-100">
         <h2 className="text-3xl font-semibold text-center mb-10">Features</h2>
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2">IIoT Monitoring</h3>
-              <p>Track machine status, runtime, and performance from any device.</p>
-            </CardContent>
-          </Card>
+          <Card className="bg-cover bg-center text-white" style={{ backgroundImage: "url('/iiot.jpg')" }}>
+  <CardContent className="p-6 bg-black/60 rounded-lg">
+    <h3 className="text-xl font-semibold mb-2">IIoT Monitoring</h3>
+    <p>Track machine status, runtime, and performance from any device.</p>
+  </CardContent>
+</Card>
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
