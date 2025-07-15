@@ -54,7 +54,7 @@ export default function Home() {
   />
 
   {/* Centered overlay: 65% height, top offset 17.5% */}
-  <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50" />
+  <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50 rounded-lg" />
 
   {/* Text content */}
   <CardContent className="relative z-10 p-6">
