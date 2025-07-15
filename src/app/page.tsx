@@ -47,7 +47,7 @@ export default function Home() {
   />
 
   {/* Optional dark overlay */}
-  <div className="absolute inset-0 bg-black/40" />
+  <div className="absolute inset-0 bg-black/80" />
 
   {/* Content sits above */}
   <CardContent className="relative z-10 p-6">
