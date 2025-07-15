@@ -39,24 +39,13 @@ export default function Home() {
     <p>Track machine status, runtime, and performance from any device.</p>
   </CardContent>
 </Card>
-          <Card className="relative overflow-hidden text-white">
-  {/* Background image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/mqtt.jpg')" }}
-  />
-
-  {/* Optional dark overlay */}
-  <div className="absolute inset-0 bg-black/80" />
-
-  {/* Content sits above */}
-  <CardContent className="relative z-10 p-6">
+<Card className="bg-cover bg-center text-white" style={{ backgroundImage: "url('/mqtt.jpg')" }}>
+  <CardContent className="p-6 bg-black/60 rounded-lg">
     <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
-    <p>
-      Native support for MQTT to connect your PLC, field devices, or sensors effortlessly.
-    </p>
+    <p>Native support for MQTT to connect your PLC, field devices, or sensors effortlessly.</p>
   </CardContent>
 </Card>
+          
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
