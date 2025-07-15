@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -11,20 +11,23 @@ export default function Home() {
   className="relative min-h-[60vh] flex flex-col items-center justify-center text-white bg-cover bg-center"
   style={{ backgroundImage: "url('/bg-tech2.jpg')" }}
 >
+  {/* Dark overlay */}
   <div className="absolute inset-0 bg-black/70 z-0" />
-  <div className="relative z-10 text-center px-4"></div>
-        <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
-        <p className="text-lg mb-6 max-w-xl mx-auto">
-          The easiest way to monitor your industrial machines with real-time dashboards.
-        </p>
-        <Link href="/products">
-          <Button
-  className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900"
->
-  View Products
-</Button>
-        </Link>
-      </section>
+
+  {/* Content on top of the overlay */}
+  <div className="relative z-10 text-center px-4">
+    <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
+    <p className="text-lg mb-6 max-w-xl mx-auto">
+      The easiest way to monitor your industrial machines with real-time dashboards.
+    </p>
+    <Link href="/products">
+      <Button className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900">
+        View Products
+      </Button>
+    </Link>
+  </div>
+</section>
+
 
       {/* Features Overview */}
       <section className="py-16 px-6 bg-gray-100">
