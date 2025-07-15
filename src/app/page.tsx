@@ -7,7 +7,12 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="py-20 px-6 text-center bg-white shadow-sm">
+      <section
+  className="relative min-h-[60vh] flex flex-col items-center justify-center text-white bg-cover bg-center"
+  style={{ backgroundImage: "url('/bg-tech2.jpg')" }}
+>
+  <div className="absolute inset-0 bg-black/70 z-0" />
+  <div className="relative z-10 text-center px-4"></div>
         <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
         <p className="text-lg mb-6 max-w-xl mx-auto">
           The easiest way to monitor your industrial machines with real-time dashboards.
