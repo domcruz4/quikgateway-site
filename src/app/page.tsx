@@ -46,12 +46,24 @@ export default function Home() {
   </CardContent>
 </Card>
           
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
-              <p>Each customer gets their own branded dashboards to view live machine status KPIs in real time.</p>
-            </CardContent>
-          </Card>
+          <Card className="relative overflow-hidden text-white">
+  {/* Background image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/dashboard.jpg')" }}
+  />
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  {/* Text content */}
+  <CardContent className="relative z-10 p-6">
+    <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
+    <p>
+      Each customer gets their own branded dashboards to view live machine status KPIs in real time.
+    </p>
+  </CardContent>
+</Card>
         </div>
       </section>
 
