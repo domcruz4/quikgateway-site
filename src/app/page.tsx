@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Flat Monthly Pricing</h3>
-            <p>No surprises. Plans from $49/month per device or up to 10 for only $199/month. Add more devices for just $20/month each additional device after.</p>
+            <p>No surprises. Plans from $49/month for one device or up to 10 for only $199/month. Monthly subscription covers secure cloud infrastructure, server maintenance, real-time dashboards, alerting, and ongoing support.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
