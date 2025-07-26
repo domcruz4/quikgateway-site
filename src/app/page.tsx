@@ -121,31 +121,38 @@ export default function Home() {
   {/* Content on top */}
   <div className="relative z-10">
     <h2 className="text-3xl font-semibold text-center mb-8">Get in Touch</h2>
- <form
-  action="https://api.web3forms.com/submit"
-  method="POST"
-  className="space-y-4"
->
-  {/* Web3Forms Access Key */}
-  <input type="hidden" name="access_key" value="470d8f27-77b6-44ba-a86a-a7836d9dd81f" />
+ <div className="max-w-lg mx-auto bg-white rounded-lg p-6 text-gray-800 shadow-lg">
+  <form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    className="space-y-4"
+  >
+    {/* Web3Forms Access Key */}
+    <input type="hidden" name="access_key" value="470d8f27-77b6-44ba-a86a-a7836d9dd81f" />
 
-  <Input name="name" placeholder="Your Name" required />
-  <Input name="email" type="email" placeholder="Email Address" required />
-  <Input name="company" placeholder="Company Name" />
+    <Input name="name" placeholder="Your Name" required />
+    <Input name="email" type="email" placeholder="Email Address" required />
+    <Input name="company" placeholder="Company Name" />
 
-  <textarea
-  name="message"
-  placeholder="Tell us what you're looking for..."
-  required
-  className="w-full border rounded p-2"
-></textarea>
+    <textarea
+      name="message"
+      placeholder="Tell us what you're looking for..."
+      required
+      className="w-full border rounded p-2 text-gray-800 bg-white"
+    ></textarea>
 
+    <Button
+      type="submit"
+      className="px-6 py-3 text-lg bg-black text-white border border-black hover:bg-gray-900 hover:border-gray-700 transition"
+    >
+      Submit Request
+    </Button>
 
-  <Button type="submit" className="px-6 py-3 text-lg">Submit Request</Button>
+    {/* Optional: Redirect to thank-you page */}
+    <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
+  </form>
+</div>
 
-  {/* Optional: Redirect to thank-you page */}
-  <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
-</form>
 
   </div>
 </section>
