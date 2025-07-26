@@ -13,7 +13,7 @@ export default function ContactPage() {
       <main className="max-w-3xl mx-auto p-6">
         <h1 className="text-3xl font-bold mb-6">Request a Demo</h1>
         <form
-          action="https://formsubmit.co/info@quikgateway.com"
+          action="https://formsubmit.co/joehansdon4@gmail.com"
           method="POST"
           className="space-y-4"
         >
