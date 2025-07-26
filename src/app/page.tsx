@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
-            <p>Monitor status, uptime, and performance instantly—right from your phone or desktop using beautiful dashboards.</p>
+            <p>Monitor status, uptime, and performance instantly right from your phone, desktop, or a TV Screen using beautiful dashboards.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Zero Coding Required</h3>

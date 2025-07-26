@@ -11,11 +11,11 @@ export default function ProductsPage() {
           <li>
             <h2 className="text-xl font-semibold">QG-DA-W</h2>
             <p>Compact Gateway box that taps into your digital and analog signals inside your machine and displays KPIs on your dashboards. Uses pre-existing plant WiFi connection ONLY.
-              $699.99
+              *Contact for pricing and availability*
             </p>
           </li>
           <li>
-            <h2 className="text-xl font-semibold">QG- DA-L</h2>
+            <h2 className="text-xl font-semibold">QG-DA-5G</h2>
             <p>Compact Gateway box that taps into your digital and analog signals inside your machine to display KPIs on your dashboard. Includes Wi-Fi and 5G UC connection via data plans.
               *Contact for pricing and availability*
             </p>
