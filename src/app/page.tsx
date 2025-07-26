@@ -127,7 +127,6 @@ export default function Home() {
     method="POST"
     className="space-y-4"
   >
-    {/* Web3Forms Access Key */}
     <input type="hidden" name="access_key" value="470d8f27-77b6-44ba-a86a-a7836d9dd81f" />
 
     <Input name="name" placeholder="Your Name" required />
@@ -148,8 +147,8 @@ export default function Home() {
       Submit Request
     </Button>
 
-    {/* Optional: Redirect to thank-you page */}
-    <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" />
+    {/* ✅ Redirect to your thank-you page */}
+    <input type="hidden" name="redirect" value="https://quikgateway.com/thank-you" />
   </form>
 </div>
 
