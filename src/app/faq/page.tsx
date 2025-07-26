@@ -7,21 +7,21 @@ export default function FAQPage() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">What is QuikGateway?</h2>
           <p>
-            QuikGateway is an IIoT gateway device that lets companies monitor their machines in real time giving KPIs on a machine and can be viewed live on dashboards. Essentially a mini SCADA system.
+            QuikGateway is an IIoT gateway solution that lets companies monitor LIVE machine data in real time giving valuable KPIs that can be viewed on custom branded dashboard. Essentially a mini SCADA system.
           </p>
         </div>
 
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">How much does it cost?</h2>
           <p>
-            Devices can be found on our product page ranging from $799-$850 depending on the model. $99/month monthly subscription per company for software and server maintenance. Each device beyond 10 costs an additional $20/month.
+            Each control panel costs $699. Monthly subscription per company is $49 for once device or up to 10 devices for $199.
           </p>
         </div>
 
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">What machines can I connect?</h2>
           <p>
-            You can connect any machine you want as long as it can receive WiFi or LTE signals.
+            You can connect any machine you want as long as it can receive WiFi signals. Our control panel prefers 24v DC control wiring for field devices. We can accomodate 120v AC signals as well with additional charges depending on how many signals needed.
           </p>
         </div>
 

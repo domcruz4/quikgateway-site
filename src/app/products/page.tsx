@@ -9,20 +9,16 @@ export default function ProductsPage() {
 
         <ul className="space-y-8">
           <li>
-            <h2 className="text-xl font-semibold">QG-ETH-W</h2>
-            <p>Compact Gateway Box that taps into your local ethernet network to gather and display KPIs on your dashboards. Uses pre-existing plant WiFi connection ONLY.</p>
-          </li>
-          <li>
             <h2 className="text-xl font-semibold">QG-DA-W</h2>
-            <p>Compact Gateway box that taps into your digital and analog signals inside your machine and displays KPIs on your dashboards. Uses pre-existing plant WiFi connection ONLY.</p>
-          </li>
-          <li>
-            <h2 className="text-xl font-semibold">QG-ETH-L</h2>
-            <p>Compact Gateway box that taps into your local ethernet network to gather and display KPIs on your dashboard. Uses LTE ONLY.</p>
+            <p>Compact Gateway box that taps into your digital and analog signals inside your machine and displays KPIs on your dashboards. Uses pre-existing plant WiFi connection ONLY.
+              $699.99
+            </p>
           </li>
           <li>
             <h2 className="text-xl font-semibold">QG- DA-L</h2>
-            <p>Compact Gateway box that taps into your digital and analog signals inside your machine to display KPIs on your dashboard. Uses LTE ONLY.</p>
+            <p>Compact Gateway box that taps into your digital and analog signals inside your machine to display KPIs on your dashboard. Includes Wi-Fi and 5G UC connection via data plans.
+              *Contact for pricing and availability*
+            </p>
           </li>
         </ul>
       </section>
