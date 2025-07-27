@@ -8,17 +8,15 @@ export default function Navbar() {
   return (
     <nav className="w-full px-6 py-4 bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image 
             src="/logo.jpeg" 
             alt="QuikGateway Logo" 
-            width={140}   // Adjust as needed
-            height={40}   // Adjust as needed
+            width={150} 
+            height={40} 
             priority
           />
         </Link>
-
         <div className="space-x-4">
           <Link href="#features" className="text-gray-600 hover:text-black">Features</Link>
           <Link href="#pricing" className="text-gray-600 hover:text-black">Pricing</Link>
