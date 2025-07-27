@@ -12,7 +12,7 @@ export default function Navbar() {
           <Image 
             src="/logo.jpeg" 
             alt="QuikGateway Logo" 
-            width={150} 
+            width={120} 
             height={40} 
             priority
           />
