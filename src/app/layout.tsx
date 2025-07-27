@@ -32,12 +32,13 @@ export default function RootLayout({
         <header className="bg-white shadow sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-black">
-</Link>
+              QuikGateway<span className="align-super text-xs ml-1">™</span>
+            </Link>
 
             <nav className="space-x-6 hidden md:block">
               <Link href="/products" className="text-gray-700 hover:text-blue-600">
-  Products
-</Link>
+                Products
+              </Link>
               <Link href="/faq" className="text-gray-700 hover:text-blue-600">
                 FAQ
               </Link>
