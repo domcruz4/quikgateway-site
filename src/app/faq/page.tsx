@@ -15,8 +15,11 @@ export default function FAQPage() {
           <h2 className="text-xl font-semibold mb-2">Why is industrial data so important?</h2>
           <p>
              -Boosts productivity by automating and optimizing processes
+
              -Reduces downtime through predictive maintenance
+
             -Improves safety by monitoring hazardous conditions
+            
             -Enables smarter decisions with real-time data analytics
           </p>
         </div>
