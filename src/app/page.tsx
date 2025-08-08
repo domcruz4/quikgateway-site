@@ -85,11 +85,11 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
           <div>
             <h3 className="text-xl font-semibold mb-2">Plug-and-Play Setup</h3>
-            <p>Get up and running in minutes with our pre-configured IIoT gateway panels that connects directly to field device wiring or PLC.</p>
+            <p>Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time.</p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
-            <p>Monitor status, uptime, and performance instantly right from your phone, desktop, or a TV Screen with a beautiful dashboard.</p>
+            <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights & Alerts</h3>
+            <p>Monitor system status and get real timie alerts instantly from your phone, desktop, or a TV Screen with a beautiful dashboard.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Zero Coding Required</h3>

@@ -27,7 +27,7 @@ export default function FAQPage() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">What are some popular systems that will benfit from this IIOT Gateway?</h2>
           <p>
-            Dust collectors, air comprssors, waste water systems, HVAC control panels, pump stations, or any Legacy PLC controlled equipment that has limited data minitoring capabilities.
+            Dust collectors, air comprssors, waste water systems, HVAC control panels, pump stations, or any Legacy PLC controlled equipment that has limited data monitoring capabilities.
           </p>
         </div>
 
