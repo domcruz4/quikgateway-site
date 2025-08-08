@@ -10,7 +10,17 @@ export default function FAQPage() {
             QuikGateway is an IIoT gateway solution that lets companies monitor LIVE machine data in real time giving valuable KPIs that can be viewed on custom branded dashboard. Essentially a mini SCADA system.
           </p>
         </div>
-        
+
+                <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Why is industrial data so important?</h2>
+          <p>
+             -Boosts productivity by automating and optimizing processes
+             -Reduces downtime through predictive maintenance
+            -Improves safety by monitoring hazardous conditions
+            -Enables smarter decisions with real-time data analytics
+          </p>
+        </div>
+
 
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">What machines can I connect?</h2>
