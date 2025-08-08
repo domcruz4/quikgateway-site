@@ -24,9 +24,15 @@ export default function FAQPage() {
           </p>
         </div>
 
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">What are some popular systems that will benfit from this IIOT Gateway?</h2>
+          <p>
+            Dust collectors, air comprssors, waste water systems, HVAC control panels, pump stations, or any Legacy PLC controlled equipment that has limited data minitoring capabilities.
+          </p>
+        </div>
 
         <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">What machines can I connect?</h2>
+          <h2 className="text-xl font-semibold mb-2">What are the requirments needed?</h2>
           <p>
             You can connect any machine/system you want as long as it can receive WiFi signals. Our control panels accept 24v DC or 120v AC control wiring for field devices. *Note* AC version require additional charges depending on how many signals needed.
           </p>
@@ -35,7 +41,7 @@ export default function FAQPage() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">Can I get a custom dashboard?</h2>
           <p>
-            Yes! Every customer gets their own branded Grafana dashboard with tailored KPIs like runtime, machine status, fault status, or any digital or analog signals you would like to monitor on your machine.
+            Yes! Every customer gets their own branded dashboard with tailored KPIs like runtime, machine status, fault status, or any digital or analog signals you would like to monitor.
           </p>
         </div>
 
