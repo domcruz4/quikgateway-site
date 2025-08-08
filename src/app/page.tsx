@@ -89,19 +89,19 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
-            <p>Monitor status, uptime, and performance instantly right from your phone, desktop, or a TV Screen using beautiful dashboards.</p>
+            <p>Monitor status, uptime, and performance instantly right from your phone, desktop, or a TV Screen with a beautiful dashboard.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Zero Coding Required</h3>
-            <p>Designed for plant operations and maintenance, not programmers. No code. No complexity. Just data.</p>
+            <p>Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Secure & Private</h3>
-            <p>Each company gets its own isolated dashboard with secure HTTPS access and custom branding.</p>
+            <p>Each company gets their own dashboard with secure HTTPS access and custom branding.</p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2">Flat Monthly Pricing</h3>
-            <p>No surprises. Plans from $49/month for one device or up to 10 for only $199/month. Monthly subscription covers secure cloud infrastructure, server maintenance, real-time dashboards, alerting, and ongoing support.</p>
+            <h3 className="text-xl font-semibold mb-2">Industry 4.0</h3>
+            <p>Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics. </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
