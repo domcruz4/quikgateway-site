@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights & Alerts</h3>
-            <p>Monitor system status and get real timie alerts instantly from your phone, desktop, or a TV Screen with a beautiful dashboard.</p>
+            <p>Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Zero Coding Required</h3>
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
-            <p>Run by automation pros who understand your production floor. We help you set up so you can start viewing live data quickly.</p>
+            <p>Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly.</p>
           </div>
         </div>
       </section>
