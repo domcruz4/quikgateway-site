@@ -19,7 +19,7 @@ export default function FAQPage() {
              -Reduces downtime through predictive maintenance
 
             -Improves safety by monitoring hazardous conditions
-            
+
             -Enables smarter decisions with real-time data analytics
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function FAQPage() {
         <div className="mb-8">
           <h2 className="text-xl font-semibold mb-2">What machines can I connect?</h2>
           <p>
-            You can connect any machine you want as long as it can receive WiFi signals. Our control panel prefers 24v DC control wiring for field devices. We can accomodate 120v AC signals as well with additional charges depending on how many signals needed.
+            You can connect any machine/system you want as long as it can receive WiFi signals. Our control panels accept 24v DC or 120v AC control wiring for field devices. *Note* AC version require additional charges depending on how many signals needed.
           </p>
         </div>
 
