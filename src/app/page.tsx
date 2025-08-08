@@ -18,7 +18,7 @@ export default function Home() {
   <div className="relative z-10 text-center px-4">
     <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
     <p className="text-lg mb-6 max-w-xl mx-auto">
-      The Mini SCADA solution to monitor your industrial machines statuses with LIVE dashboards and get real time alerts and notifications.
+      We are your solution to a smarter industry 4.0 by providing real-time field level data directly from your industrial systems and onto a custom dashboard that can be viewed from anywhere in the world.
     </p>
     <Link href="/products">
       <Button className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900">
@@ -53,7 +53,7 @@ export default function Home() {
   <CardContent className="relative z-10 p-6">
     <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
     <p>
-      Native support for MQTT to connect your PLC, field devices, or sensors effortlessly.
+      Native support for MQTT to send and receive real field signals effortlessly.
     </p>
   </CardContent>
 </Card>
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
           <div>
             <h3 className="text-xl font-semibold mb-2">Plug-and-Play Setup</h3>
-            <p>Get up and running in minutes with our pre-configured IIoT gateway that connects directly to field device wiring or PLC.</p>
+            <p>Get up and running in minutes with our pre-configured IIoT gateway panels that connects directly to field device wiring or PLC.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2">Real-Time Machine Insights</h3>
