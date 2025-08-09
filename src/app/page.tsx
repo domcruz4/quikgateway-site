@@ -79,9 +79,6 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium tracking-wide text-slate-600">
-              Why Choose QuikGateway
-            </span>
             <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">
               Why Choose QuikGateway?
             </h2>
