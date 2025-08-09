@@ -70,7 +70,7 @@ export default function FAQPage() {
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <Factory className="h-5 w-5 text-indigo-600" />
-              What are some popular systems that will benfit from this IIOT
+              What are some popular systems that will benefit from this IIOT
               Gateway?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
