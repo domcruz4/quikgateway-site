@@ -11,7 +11,9 @@ export default function Home() {
         className="relative min-h-[60vh] flex flex-col items-center justify-center text-white bg-cover bg-center"
         style={{ backgroundImage: "url('/bg-tech2.jpg')" }}
       >
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/70 z-0" />
+        {/* Content on top of the overlay */}
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
           <p className="text-lg mb-6 max-w-xl mx-auto">
@@ -37,32 +39,42 @@ export default function Home() {
           </Card>
 
           <Card className="relative overflow-hidden text-white">
+            {/* Background image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: "url('/mqtt.jpg')" }}
             />
+            {/* Centered overlay: 65% height, top offset 17.5% */}
             <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50 rounded-lg" />
+            {/* Text content */}
             <CardContent className="relative z-10 p-6">
               <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
-              <p>Native support for MQTT to send and receive real field signals effortlessly.</p>
+              <p>
+                Native support for MQTT to send and receive real field signals effortlessly.
+              </p>
             </CardContent>
           </Card>
 
           <Card className="relative overflow-hidden text-white">
+            {/* Background image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: "url('/dashboard.jpg')" }}
             />
+            {/* Centered overlay: 65% height, top offset 17.5% */}
             <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50 rounded-lg" />
+            {/* Text content */}
             <CardContent className="relative z-10 p-6">
               <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
-              <p>Each customer gets their own branded dashboards to view live machine status KPIs in real time.</p>
+              <p>
+                Each customer gets their own branded dashboards to view live machine status KPIs in real time.
+              </p>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Why Choose Us (modern layout, original text) */}
       <section className="relative py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
         <div className="relative mx-auto max-w-6xl px-6">
@@ -71,38 +83,41 @@ export default function Home() {
               Why Choose QuikGateway
             </span>
             <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">
-              Plug in. See data. Act faster.
+              Why Choose QuikGateway?
             </h2>
-            <p className="mt-3 text-slate-600">
-              Purpose-built for maintenance, ops, and reliability teams—no coding required.
-            </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Plug-and-Play Setup",
-                text: "Pre-configured gateway panels. Land your field wires and go live the same day."
+                text:
+                  "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time."
               },
               {
-                title: "Real-Time Insights & Alerts",
-                text: "Status, KPIs, and instant alerts on phone, desktop, or a wall-mounted TV."
+                title: "Real-Time Machine Insights & Alerts",
+                text:
+                  "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen."
               },
               {
                 title: "Zero Coding Required",
-                text: "Built for plant ops, management, and maintenance. No scripts—just results."
+                text:
+                  "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data."
               },
               {
                 title: "Secure & Private",
-                text: "Per-company dashboards, HTTPS, and access controls—plus your branding."
+                text:
+                  "Each company gets their own dashboard with secure HTTPS access and custom branding."
               },
               {
-                title: "Industry 4.0 Ready",
-                text: "Boost uptime, cut downtime, and make smarter calls with live analytics."
+                title: "Industry 4.0",
+                text:
+                  "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics. "
               },
               {
                 title: "Expert Support",
-                text: "Automation pros help you deploy fast and start seeing value immediately."
+                text:
+                  "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly."
               }
             ].map((item, i) => (
               <div
@@ -110,8 +125,10 @@ export default function Home() {
                 className="group relative rounded-2xl border bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 
                 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:ring-slate-300"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-100/0 via-sky-100/0 to-sky-100/0 opacity-0 
-                transition-opacity duration-300 group-hover:opacity-100"></div>
+                <div
+                  className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-100/0 via-sky-100/0 to-sky-100/0 opacity-0 
+                  transition-opacity duration-300 group-hover:opacity-100"
+                />
                 <h3 className="relative text-lg font-semibold text-slate-900">{item.title}</h3>
                 <p className="relative mt-2 text-slate-600">{item.text}</p>
               </div>
@@ -125,7 +142,9 @@ export default function Home() {
         className="relative py-16 px-6 text-white bg-cover bg-center"
         style={{ backgroundImage: "url('/touch.jpeg')" }}
       >
+        {/* Optional dark overlay */}
         <div className="absolute inset-0 bg-black/50 z-0" />
+        {/* Content on top */}
         <div className="relative z-10">
           <h2 className="text-3xl font-semibold text-center mb-8">Get in Touch</h2>
           <div className="max-w-lg mx-auto bg-white rounded-lg p-6 text-gray-800 shadow-lg">
@@ -134,7 +153,11 @@ export default function Home() {
               method="POST"
               className="space-y-4"
             >
-              <input type="hidden" name="access_key" value="470d8f27-77b6-44ba-a86a-a7836d9dd81f" />
+              <input
+                type="hidden"
+                name="access_key"
+                value="470d8f27-77b6-44ba-a86a-a7836d9dd81f"
+              />
 
               <Input name="name" placeholder="Your Name" required />
               <Input name="email" type="email" placeholder="Email Address" required />
@@ -154,7 +177,12 @@ export default function Home() {
                 Submit Request
               </Button>
 
-              <input type="hidden" name="redirect" value="https://quikgateway.com/thank-you" />
+              {/* ✅ Redirect to your thank-you page */}
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://quikgateway.com/thank-you"
+              />
             </form>
           </div>
         </div>
