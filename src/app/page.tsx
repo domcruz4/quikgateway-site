@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us (glassmorphism + animated gradient border + layered glow) */}
+      {/* Why Choose Us (subtle multi-color glow) */}
       <section className="relative py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
         <div className="relative mx-auto max-w-6xl px-6">
@@ -107,37 +107,12 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="
-                  group relative rounded-2xl p-[2px]
-                  bg-[conic-gradient(at_top_left,_#38bdf8_0%,_#a78bfa_25%,_#22c55e_50%,_#38bdf8_100%)]
-                  animate-[spin_10s_linear_infinite]
-                  [animation-play-state:paused] hover:[animation-play-state:running]
-                  shadow-sm
-                "
+                className="group relative rounded-2xl border border-transparent bg-white p-6 shadow-sm ring-1 ring-slate-200 
+                transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg
+                hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.5),0_0_25px_-5px_rgba(167,139,250,0.5),0_0_25px_-5px_rgba(34,197,94,0.5)]"
               >
-                {/* Inner card */}
-                <div
-                  className="
-                    rounded-2xl bg-white/70 backdrop-blur-lg p-6 ring-1 ring-white/60
-                    transition-all duration-300 ease-out
-                    hover:-translate-y-2 hover:scale-[1.015]
-                    hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.25),0_0_50px_-10px_rgba(56,189,248,0.55)]
-                  "
-                >
-                  {/* Accent bar */}
-                  <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4 opacity-70" />
-                  <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-                  <p className="mt-2 text-slate-600">{item.text}</p>
-                </div>
-
-                {/* Outer glow layer (soft) */}
-                <div
-                  className="
-                    pointer-events-none absolute inset-0 rounded-2xl
-                    bg-sky-400/0 group-hover:bg-sky-400/15
-                    blur-2xl transition-colors duration-500
-                  "
-                />
+                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-2 text-slate-600">{item.text}</p>
               </div>
             ))}
           </div>
