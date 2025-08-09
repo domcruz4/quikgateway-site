@@ -1,7 +1,8 @@
+import { WifiIcon, SignalIcon, BoltIcon } from "@heroicons/react/24/solid";
+
 export default function ProductsPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-gray-800">
-      {/* Page container */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -22,10 +23,12 @@ export default function ProductsPage() {
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-xl font-semibold">Q-DC-W</h2>
                 <div className="flex gap-2">
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                    <BoltIcon className="h-3 w-3" />
                     24V DC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
                     Wi-Fi
                   </span>
                 </div>
@@ -44,13 +47,16 @@ export default function ProductsPage() {
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-xl font-semibold">Q-DC-5G</h2>
                 <div className="flex gap-2">
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                    <BoltIcon className="h-3 w-3" />
                     24V DC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                    <SignalIcon className="h-3 w-3" />
                     5G UC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
                     Wi-Fi
                   </span>
                 </div>
@@ -69,10 +75,12 @@ export default function ProductsPage() {
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-xl font-semibold">Q-AC-W</h2>
                 <div className="flex gap-2">
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
-                    120V AC
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
+                    <BoltIcon className="h-3 w-3" />
+                    120v AC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
                     Wi-Fi
                   </span>
                 </div>
@@ -91,13 +99,16 @@ export default function ProductsPage() {
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-xl font-semibold">Q-AC-5G</h2>
                 <div className="flex gap-2">
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
-                    120V AC
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
+                    <BoltIcon className="h-3 w-3" />
+                    120v AC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                    <SignalIcon className="h-3 w-3" />
                     5G UC
                   </span>
-                  <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
                     Wi-Fi
                   </span>
                 </div>
@@ -110,7 +121,7 @@ export default function ProductsPage() {
           </li>
         </ul>
 
-        {/* Subtle CTA row (optional, no text removed) */}
+        {/* Subtle note */}
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-3 text-sm text-gray-600">
             <span className="h-2 w-2 rounded-full bg-sky-500" />
