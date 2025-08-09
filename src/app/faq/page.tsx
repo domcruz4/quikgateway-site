@@ -26,7 +26,8 @@ export default function FAQPage() {
           {/* Q1 */}
           <AccordionItem
             value="item-1"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-sky-300 data-[state=open]:shadow-[0_0_8px_rgba(56,189,248,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <Cpu className="h-5 w-5 text-sky-600" />
@@ -43,7 +44,8 @@ export default function FAQPage() {
           {/* Q2 */}
           <AccordionItem
             value="item-2"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-emerald-300 data-[state=open]:shadow-[0_0_8px_rgba(16,185,129,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <BarChart3 className="h-5 w-5 text-emerald-600" />
@@ -63,7 +65,8 @@ export default function FAQPage() {
           {/* Q3 */}
           <AccordionItem
             value="item-3"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-indigo-300 data-[state=open]:shadow-[0_0_8px_rgba(99,102,241,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <Factory className="h-5 w-5 text-indigo-600" />
@@ -80,7 +83,8 @@ export default function FAQPage() {
           {/* Q4 */}
           <AccordionItem
             value="item-4"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-orange-300 data-[state=open]:shadow-[0_0_8px_rgba(251,146,60,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <Plug className="h-5 w-5 text-orange-500" />
@@ -97,7 +101,8 @@ export default function FAQPage() {
           {/* Q5 */}
           <AccordionItem
             value="item-5"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-purple-300 data-[state=open]:shadow-[0_0_8px_rgba(168,85,247,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <LayoutDashboard className="h-5 w-5 text-purple-600" />
@@ -113,7 +118,8 @@ export default function FAQPage() {
           {/* Q6 */}
           <AccordionItem
             value="item-6"
-            className="border rounded-xl bg-white/70 backdrop-blur"
+            className="border rounded-xl bg-white/70 backdrop-blur transition
+                       data-[state=open]:border-rose-300 data-[state=open]:shadow-[0_0_8px_rgba(244,63,94,0.4)]"
           >
             <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
               <Rocket className="h-5 w-5 text-rose-600" />
