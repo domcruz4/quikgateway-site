@@ -5,6 +5,15 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 
+import {
+  Cpu,
+  BarChart3,
+  Factory,
+  Plug,
+  LayoutDashboard,
+  Rocket,
+} from "lucide-react";
+
 export default function FAQPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-gray-800">
@@ -15,18 +24,29 @@ export default function FAQPage() {
 
         <Accordion type="single" collapsible className="space-y-4">
           {/* Q1 */}
-          <AccordionItem value="item-1" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
+          <AccordionItem
+            value="item-1"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <Cpu className="h-5 w-5 text-sky-600" />
               What is QuikGateway?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
-              QuikGateway is an IIoT gateway solution that lets companies monitor LIVE machine data in real time giving valuable KPIs that can be viewed on custom branded dashboard. Essentially a mini SCADA system.
+              QuikGateway is an IIoT gateway solution that lets companies
+              monitor LIVE machine data in real time giving valuable KPIs that
+              can be viewed on custom branded dashboard. Essentially a mini
+              SCADA system.
             </AccordionContent>
           </AccordionItem>
 
           {/* Q2 */}
-          <AccordionItem value="item-2" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
+          <AccordionItem
+            value="item-2"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <BarChart3 className="h-5 w-5 text-emerald-600" />
               Why is industrial data so important?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700 whitespace-pre-line">
@@ -41,42 +61,68 @@ export default function FAQPage() {
           </AccordionItem>
 
           {/* Q3 */}
-          <AccordionItem value="item-3" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
-              What are some popular systems that will benfit from this IIOT Gateway?
+          <AccordionItem
+            value="item-3"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <Factory className="h-5 w-5 text-indigo-600" />
+              What are some popular systems that will benfit from this IIOT
+              Gateway?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
-              Dust collectors, air comprssors, waste water systems, HVAC control panels, pump stations, or any Legacy PLC controlled equipment that has limited data monitoring capabilities.
+              Dust collectors, air comprssors, waste water systems, HVAC control
+              panels, pump stations, or any Legacy PLC controlled equipment that
+              has limited data monitoring capabilities.
             </AccordionContent>
           </AccordionItem>
 
           {/* Q4 */}
-          <AccordionItem value="item-4" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
+          <AccordionItem
+            value="item-4"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <Plug className="h-5 w-5 text-orange-500" />
               What are the requirments needed?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
-              You can connect any machine/system you want as long as it can receive WiFi signals. Our control panels accept 24v DC or 120v AC control wiring for field devices. *Note* AC version require additional charges depending on how many signals needed.
+              You can connect any machine/system you want as long as it can
+              receive WiFi signals. Our control panels accept 24v DC or 120v AC
+              control wiring for field devices. *Note* AC version require
+              additional charges depending on how many signals needed.
             </AccordionContent>
           </AccordionItem>
 
           {/* Q5 */}
-          <AccordionItem value="item-5" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
+          <AccordionItem
+            value="item-5"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <LayoutDashboard className="h-5 w-5 text-purple-600" />
               Can I get a custom dashboard?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
-              Yes! Every customer gets their own branded dashboard with tailored KPIs like runtime, machine status, fault status, or any digital or analog signals you would like to monitor.
+              Yes! Every customer gets their own branded dashboard with tailored
+              KPIs like runtime, machine status, fault status, or any digital or
+              analog signals you would like to monitor.
             </AccordionContent>
           </AccordionItem>
 
           {/* Q6 */}
-          <AccordionItem value="item-6" className="border rounded-xl bg-white/70 backdrop-blur">
-            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold">
+          <AccordionItem
+            value="item-6"
+            className="border rounded-xl bg-white/70 backdrop-blur"
+          >
+            <AccordionTrigger className="px-4 py-3 text-left text-xl font-semibold flex items-center gap-2">
+              <Rocket className="h-5 w-5 text-rose-600" />
               How do I get started?
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-[15px] leading-relaxed text-gray-700">
-              Just fill out the form on the homepage to request more details about our service, and we will get back to you with all the information you need to get started.
+              Just fill out the form on the homepage to request more details
+              about our service, and we will get back to you with all the
+              information you need to get started.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -84,4 +130,3 @@ export default function FAQPage() {
     </main>
   );
 }
-
