@@ -2,93 +2,75 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav
-      className={[
-        "sticky top-0 z-50 w-full transition",
-        // Glassy background with graceful fallback
-        "bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70",
-        // Subtle border/shadow for separation
-        "border-b border-slate-200 shadow-[0_1px_0_0_rgba(0,0,0,0.03)]",
-      ].join(" ")}
-    >
-      <div className="mx-auto max-w-6xl px-6 py-3">
-        <div className="flex items-center justify-between">
-          {/* Brand */}
-          <Link
-            href="/"
-            className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent"
-          >
-            QuikGateway
+    <header className="bg-white shadow sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Brand */}
+        <Link
+          href="/"
+          className="flex items-center text-2xl font-bold text-black hover:text-blue-600 transition-colors"
+        >
+          QuikGateway<span className="align-super text-xs ml-1">™</span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6 items-center">
+          <Link href="/products" className="text-gray-700 hover:text-blue-600 transition-colors">
+            Products
           </Link>
-
-          {/* Desktop nav */}
-          <div className="hidden items-center gap-6 md:flex">
-            <Link
-              href="#features"
-              className="text-sm font-medium text-gray-700 hover:text-gray-900 hover:underline underline-offset-4"
-            >
-              Features
-            </Link>
-            <Link
-              href="#pricing"
-              className="text-sm font-medium text-gray-700 hover:text-gray-900 hover:underline underline-offset-4"
-            >
-              Pricing
-            </Link>
-
-            <Button asChild className="shadow-sm hover:shadow-md">
-              <a href="/contact" className="text-base px-5 py-2.5">
-                Request a Demo
-              </a>
-            </Button>
-          </div>
-
-          {/* Mobile toggle */}
-          <button
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 hover:bg-white"
-            aria-label="Toggle menu"
-            onClick={() => setOpen((s) => !s)}
+          <Link href="/faq" className="text-gray-700 hover:text-blue-600 transition-colors">
+            FAQ
+          </Link>
+          <a
+            href="https://dashboard.quikgateway.com"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
+            Login
+          </a>
+        </nav>
 
-        {/* Mobile panel */}
-        {open && (
-          <div
-            className="mt-3 flex flex-col gap-2 rounded-xl border border-slate-200 bg-white/90 p-3 shadow-lg backdrop-blur md:hidden"
-            role="dialog"
-            aria-modal="true"
-          >
-            <Link
-              href="#features"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-gray-800 hover:bg-slate-50"
-              onClick={() => setOpen(false)}
-            >
-              Features
-            </Link>
-            <Link
-              href="#pricing"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-gray-800 hover:bg-slate-50"
-              onClick={() => setOpen(false)}
-            >
-              Pricing
-            </Link>
-            <Button asChild className="mt-1">
-              <a href="/contact" className="text-base px-5 py-2.5" onClick={() => setOpen(false)}>
-                Request a Demo
-              </a>
-            </Button>
-          </div>
-        )}
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 rounded hover:bg-gray-100 transition"
+          onClick={() => setOpen(v => !v)}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          aria-label="Toggle menu"
+        >
+          {/* simple hamburger / close */}
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </div>
-    </nav>
+
+      {/* Mobile Menu */}
+      <div
+        id="mobile-menu"
+        className={`md:hidden px-6 pb-4 space-y-2 bg-white shadow ${open ? '' : 'hidden'}`}
+      >
+        <Link href="/products" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setOpen(false)}>
+          Products
+        </Link>
+        <Link href="/faq" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setOpen(false)}>
+          FAQ
+        </Link>
+        <a
+          href="https://dashboard.quikgateway.com"
+          className="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          onClick={() => setOpen(false)}
+        >
+          Login
+        </a>
+      </div>
+    </header>
   );
 }
