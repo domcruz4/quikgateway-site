@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us (modern layout, original text) */}
+      {/* Why Choose Us (modern layout, original text, glow cards) */}
       <section className="relative py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
         <div className="relative mx-auto max-w-6xl px-6">
@@ -119,15 +119,15 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group relative rounded-2xl border bg-white/80 p-6 shadow-sm ring-1 ring-slate-200 
-                transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:ring-slate-300"
+                className="group relative rounded-2xl border border-transparent bg-gradient-to-br from-slate-100 to-white p-[2px] shadow-md 
+                transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-200/60"
               >
-                <div
-                  className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-100/0 via-sky-100/0 to-sky-100/0 opacity-0 
-                  transition-opacity duration-300 group-hover:opacity-100"
-                />
-                <h3 className="relative text-lg font-semibold text-slate-900">{item.title}</h3>
-                <p className="relative mt-2 text-slate-600">{item.text}</p>
+                <div className="rounded-2xl bg-white/90 p-6 backdrop-blur-sm">
+                  <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-slate-600">{item.text}</p>
+                </div>
+                <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-tr from-sky-400/0 via-sky-400/0 to-sky-400/0 opacity-0 
+                group-hover:opacity-100 blur-2xl transition-opacity duration-500" />
               </div>
             ))}
           </div>
