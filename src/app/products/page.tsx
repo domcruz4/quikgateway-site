@@ -1,7 +1,4 @@
-// app/products/page.tsx (or wherever your route lives)
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Wifi, SignalHigh, Bolt } from "lucide-react";
+import { WifiIcon, SignalIcon, BoltIcon } from "@heroicons/react/24/solid";
 
 export default function ProductsPage() {
   return (
@@ -20,111 +17,107 @@ export default function ProductsPage() {
         {/* Product grid */}
         <ul className="grid gap-6 sm:grid-cols-2">
           {/* Q-DC-W */}
-          <li>
-            <Card className="group border-gray-200 shadow-sm hover:shadow-lg transition">
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-xl font-semibold">Q-DC-W</CardTitle>
-                  <div className="flex gap-2">
-                    <Badge variant="secondary" className="gap-1">
-                      <Bolt className="h-3.5 w-3.5" />
-                      24V DC
-                    </Badge>
-                    <Badge variant="outline" className="gap-1">
-                      <Wifi className="h-3.5 w-3.5" />
-                      Wi-Fi
-                    </Badge>
-                  </div>
+          <li className="group relative rounded-2xl border border-gray-200 bg-white/70 backdrop-blur transition hover:shadow-xl hover:-translate-y-0.5">
+            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-sky-50 to-transparent opacity-0 group-hover:opacity-100 transition" />
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-xl font-semibold">Q-DC-W</h2>
+                <div className="flex gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                    <BoltIcon className="h-3 w-3" />
+                    24V DC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
+                    Wi-Fi
+                  </span>
                 </div>
-              </CardHeader>
-              <CardContent className="text-sm text-gray-700 leading-relaxed">
+              </div>
+              <p className="text-sm leading-relaxed text-gray-700">
                 Compact Gateway control panel that accepts 24V DC wiring for field signals. Uses pre-existing plant WiFi connection ONLY.
                 *Contact for pricing and availability*
-              </CardContent>
-            </Card>
+              </p>
+            </div>
           </li>
 
           {/* Q-DC-5G */}
-          <li>
-            <Card className="group border-gray-200 shadow-sm hover:shadow-lg transition">
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-xl font-semibold">Q-DC-5G</CardTitle>
-                  <div className="flex gap-2">
-                    <Badge variant="secondary" className="gap-1">
-                      <Bolt className="h-3.5 w-3.5" />
-                      24V DC
-                    </Badge>
-                    <Badge variant="secondary" className="gap-1">
-                      <SignalHigh className="h-3.5 w-3.5" />
-                      5G UC
-                    </Badge>
-                    <Badge variant="outline" className="gap-1">
-                      <Wifi className="h-3.5 w-3.5" />
-                      Wi-Fi
-                    </Badge>
-                  </div>
+          <li className="group relative rounded-2xl border border-gray-200 bg-white/70 backdrop-blur transition hover:shadow-xl hover:-translate-y-0.5">
+            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-fuchsia-50 to-transparent opacity-0 group-hover:opacity-100 transition" />
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-xl font-semibold">Q-DC-5G</h2>
+                <div className="flex gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-sky-100 text-sky-700">
+                    <BoltIcon className="h-3 w-3" />
+                    24V DC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                    <SignalIcon className="h-3 w-3" />
+                    5G UC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
+                    Wi-Fi
+                  </span>
                 </div>
-              </CardHeader>
-              <CardContent className="text-sm text-gray-700 leading-relaxed">
+              </div>
+              <p className="text-sm leading-relaxed text-gray-700">
                 Compact Gateway control panel that accepts 24V DC wiring for field signals. Includes Wi-Fi and 5G UC connection via data plans.
                 *Contact for pricing and availability*
-              </CardContent>
-            </Card>
+              </p>
+            </div>
           </li>
 
           {/* Q-AC-W */}
-          <li>
-            <Card className="group border-gray-200 shadow-sm hover:shadow-lg transition">
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-xl font-semibold">Q-AC-W</CardTitle>
-                  <div className="flex gap-2">
-                    <Badge variant="secondary" className="gap-1">
-                      <Bolt className="h-3.5 w-3.5" />
-                      120v AC
-                    </Badge>
-                    <Badge variant="outline" className="gap-1">
-                      <Wifi className="h-3.5 w-3.5" />
-                      Wi-Fi
-                    </Badge>
-                  </div>
+          <li className="group relative rounded-2xl border border-gray-200 bg-white/70 backdrop-blur transition hover:shadow-xl hover:-translate-y-0.5">
+            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-emerald-50 to-transparent opacity-0 group-hover:opacity-100 transition" />
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-xl font-semibold">Q-AC-W</h2>
+                <div className="flex gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
+                    <BoltIcon className="h-3 w-3" />
+                    120v AC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
+                    Wi-Fi
+                  </span>
                 </div>
-              </CardHeader>
-              <CardContent className="text-sm text-gray-700 leading-relaxed">
+              </div>
+              <p className="text-sm leading-relaxed text-gray-700">
                 Compact Gateway control panel that accepts 120v AC wiring for field signals. Uses pre-existing plant WiFi connection ONLY.
                 *Contact for pricing and availability*
-              </CardContent>
-            </Card>
+              </p>
+            </div>
           </li>
 
           {/* Q-AC-5G */}
-          <li>
-            <Card className="group border-gray-200 shadow-sm hover:shadow-lg transition">
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between">
-                  <CardTitle className="text-xl font-semibold">Q-AC-5G</CardTitle>
-                  <div className="flex gap-2">
-                    <Badge variant="secondary" className="gap-1">
-                      <Bolt className="h-3.5 w-3.5" />
-                      120v AC
-                    </Badge>
-                    <Badge variant="secondary" className="gap-1">
-                      <SignalHigh className="h-3.5 w-3.5" />
-                      5G UC
-                    </Badge>
-                    <Badge variant="outline" className="gap-1">
-                      <Wifi className="h-3.5 w-3.5" />
-                      Wi-Fi
-                    </Badge>
-                  </div>
+          <li className="group relative rounded-2xl border border-gray-200 bg-white/70 backdrop-blur transition hover:shadow-xl hover:-translate-y-0.5">
+            <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition" />
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-xl font-semibold">Q-AC-5G</h2>
+                <div className="flex gap-2">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-emerald-100 text-emerald-700">
+                    <BoltIcon className="h-3 w-3" />
+                    120v AC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-700">
+                    <SignalIcon className="h-3 w-3" />
+                    5G UC
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium rounded-full bg-gray-100 text-gray-700">
+                    <WifiIcon className="h-3 w-3" />
+                    Wi-Fi
+                  </span>
                 </div>
-              </CardHeader>
-              <CardContent className="text-sm text-gray-700 leading-relaxed">
+              </div>
+              <p className="text-sm leading-relaxed text-gray-700">
                 Compact Gateway control panel that accepts 120v AC wiring for field signals. Includes Wi-Fi and 5G UC connection via data plans.
                 *Contact for pricing and availability*
-              </CardContent>
-            </Card>
+              </p>
+            </div>
           </li>
         </ul>
 
