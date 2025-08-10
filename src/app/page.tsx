@@ -140,62 +140,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us (subtle multi-color glow) */}
-      <section className="relative py-20">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
-        <div className="relative mx-auto max-w-6xl px-6">
-          <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">
-              Why Choose QuikGateway?
-            </h2>
-          </div>
+{/* Why Choose QuikGateway (modern visual style) */}
+<section className="relative py-20">
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
+  <div className="relative mx-auto max-w-6xl px-6">
+    <div className="mx-auto mb-12 max-w-2xl text-center">
+      <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">
+        Why Choose QuikGateway?
+      </h2>
+    </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Plug-and-Play Setup",
-                text:
-                  "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time."
-              },
-              {
-                title: "Real-Time Machine Insights & Alerts",
-                text:
-                  "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen."
-              },
-              {
-                title: "Zero Coding Required",
-                text:
-                  "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data."
-              },
-              {
-                title: "Secure & Private",
-                text:
-                  "Each company gets their own dashboard with secure HTTPS access and custom branding."
-              },
-              {
-                title: "Industry 4.0",
-                text:
-                  "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics. "
-              },
-              {
-                title: "Expert Support",
-                text:
-                  "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly."
-              }
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="group relative rounded-2xl border border-transparent bg-white p-6 shadow-sm ring-1 ring-slate-200 
-                transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg
-                hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.5),0_0_25px_-5px_rgba(167,139,250,0.5),0_0_25px_-5px_rgba(34,197,94,0.5)]"
-              >
-                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-2 text-slate-600">{item.text}</p>
-              </div>
-            ))}
-          </div>
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        {
+          icon: "⚡",
+          title: "Plug-and-Play Setup",
+          text:
+            "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time."
+        },
+        {
+          icon: "📊",
+          title: "Real-Time Machine Insights & Alerts",
+          text:
+            "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen."
+        },
+        {
+          icon: "💻",
+          title: "Zero Coding Required",
+          text:
+            "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data."
+        },
+        {
+          icon: "🔒",
+          title: "Secure & Private",
+          text:
+            "Each company gets their own dashboard with secure HTTPS access and custom branding."
+        },
+        {
+          icon: "🏭",
+          title: "Industry 4.0",
+          text:
+            "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics."
+        },
+        {
+          icon: "🤝",
+          title: "Expert Support",
+          text:
+            "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly."
+        }
+      ].map((item, i) => (
+        <div
+          key={i}
+          className="group relative rounded-2xl border border-transparent bg-white p-6 shadow-sm ring-1 ring-slate-200 
+          transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg
+          hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.5),0_0_25px_-5px_rgba(167,139,250,0.5),0_0_25px_-5px_rgba(34,197,94,0.5)]"
+        >
+          <div className="mb-4 text-3xl">{item.icon}</div>
+          <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+          <p className="mt-2 text-slate-600">{item.text}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Form */}
       <section
