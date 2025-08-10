@@ -5,8 +5,10 @@ import type { LucideIcon } from "lucide-react";
 import {
   Zap, Code2, Lock, Factory, Headphones,
   Play, AlertTriangle, Octagon, Settings2, RefreshCw, CheckCircle2,
-  Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase
+  Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase, ThermometerSnowflake, Flame, Droplet, Fan, Thermometer,
+  Box, Cog, Hammer, ArrowRightLeft, Package, Beaker, Snowflake, AirVent
 } from "lucide-react";
+
 
 // Why Choose features (match visuals from the earlier cards)
 type Feature = { icon: LucideIcon; title: string; text: string; color: string };
@@ -68,7 +70,7 @@ export default function Home() {
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl font-bold mb-4">Welcome to QuikGateway</h1>
           <p className="text-lg mb-6 max-w-xl mx-auto">
-            We are your solution to a smarter industry 4.0 by providing real-time field level data directly from your industrial systems and onto a custom dashboard that can be viewed from anywhere in the world.
+            We are your solution to a smarter industry 4.0 
           </p>
           <Link href="/products">
             <Button className="px-6 py-2 bg-black text-white border border-black hover:bg-gray-900">
@@ -148,6 +150,66 @@ export default function Home() {
               </div>
             </div>
 
+{/* Most common systems — matches previous visuals (gradient bar + hover glow + icons) */}
+<section className="relative py-20">
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
+  <div className="pointer-events-none absolute inset-0">
+    <div className="mx-auto h-24 max-w-6xl bg-gradient-to-r from-sky-200/25 via-fuchsia-200/25 to-emerald-200/25 blur-2xl" />
+  </div>
+
+  <div className="relative mx-auto max-w-6xl px-6">
+    <h2 className="text-4xl font-bold tracking-tight text-slate-900">Most common systems</h2>
+
+    {(() => {
+      type Item = { icon: LucideIcon; color: string; text: string };
+      const items: Item[] = [
+        { icon: Wind,                color: "text-sky-600",     text: "Dust collectors/baghouses — catch clogged filters, fan/VFD trips, bin overflows, stay EPA/OSHA-ready." },
+        { icon: Gauge,               color: "text-indigo-600",  text: "Air compressors — see duty cycle, leaks, high temp/pressure, unexpected stops; cut energy waste." },
+        { icon: ThermometerSnowflake,color: "text-cyan-600",    text: "Chillers & cooling towers — track ΔT, flow, level/conductivity; prevent freeze/overheat and efficiency loss." },
+        { icon: Flame,               color: "text-rose-600",    text: "Boilers/steam — lockouts, steam pressure, feedwater level; avoid downtime and safety events." },
+        { icon: Droplet,             color: "text-emerald-600", text: "Process pumps — suction/discharge pressure, seal leak, current; spot clogs, cavitation, dry-run." },
+        { icon: Fan,                 color: "text-slate-700",   text: "Central vacuum systems — header vacuum, run/fault; find leaks and over-cycling fast." },
+        { icon: Thermometer,         color: "text-orange-600",  text: "Ovens/dryers/furnaces — chamber temp and conveyor/run; stop out-of-spec temps before scrap." },
+        { icon: Box,                color: "text-purple-600",  text: "Injection molding — cycle pulses, faults, hydraulic pressure; tighten cycle time, reduce scrap spikes." },
+        { icon: Cog,                 color: "text-slate-700",   text: "CNCs (mills/lathes) — cycle/alarms, spindle load; real utilization, tool wear trends, alarm patterns." },
+        { icon: Hammer,              color: "text-amber-600",   text: "Presses (stamping/hydraulic) — stroke counts, faults, lube/tonnage signals; detect jams and die issues." },
+        { icon: ArrowRightLeft,      color: "text-sky-600",     text: "Conveyors/sorters — run/fault, photoeye jams, motor current; expose bottlenecks and nuisance trips." },
+        { icon: Package,             color: "text-emerald-600", text: "Packaging lines — cycle & reject counts, air pressure; OEE clarity and changeover loss visibility." },
+        { icon: Beaker,              color: "text-indigo-600",  text: "Parts washers/CIP — temp, flow, tank level, run/fault; ensure process quality and prevent empty-tank trips." },
+        { icon: Snowflake,           color: "text-cyan-600",    text: "Refrigeration/walk-ins — room/case temp, compressor run/fault, door status; stop product loss early." },
+        { icon: AirVent,             color: "text-slate-700",   text: "RTUs/MAUs (HVAC) — fan/compressor run, supply air temp, filter ΔP; cut off-hours runtime and filter issues." },
+      ];
+      return (
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((it, i) => (
+            <div
+              key={i}
+              className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg"
+            >
+              {/* hover glow overlay (same as other sections) */}
+              <div
+                className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  background:
+                    "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)",
+                }}
+              />
+              <div className="relative">
+                {/* top gradient bar */}
+                <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+                {/* single-color icon (matches previous section style) */}
+                <div className="mb-3">
+                  <it.icon className={`h-5 w-5 ${it.color}`} aria-hidden="true" />
+                </div>
+                <p className="text-slate-700">{it.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    })()}
+  </div>
+</section>
             {/* Card 2 */}
             <div className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
               <div
