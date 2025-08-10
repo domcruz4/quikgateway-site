@@ -88,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto max-w-6xl px-6">
-          <h2 className="text-4xl font-bold tracking-tight text-slate-900">
+          <h2 className="text-4xl font-bold tracking-tight text-slate-900 text-center">
             Bring your industrial systems online today!
           </h2>
           <p className="mt-2 text-slate-600">
@@ -224,7 +224,7 @@ export default function Home() {
   </div>
 
   <div className="relative mx-auto max-w-6xl px-6">
-    <h2 className="text-4xl font-bold tracking-tight text-slate-900">Most common systems</h2>
+    <h2 className="text-4xl font-bold tracking-tight text-slate-900 text-center">Most common systems</h2>
 
     {(() => {
       type Item = { icon: LucideIcon; color: string; text: string };
