@@ -29,12 +29,6 @@ export default function Home() {
 <section className="relative py-16">
   <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
   <div className="relative mx-auto max-w-6xl px-6">
-    {/* Pitch card */}
-    <div className="rounded-2xl border bg-white p-6 shadow-sm ring-1 ring-slate-200">
-      <p className="text-lg leading-relaxed text-slate-800">
-        QuikGateway drops into any brownfield line and turns your machine signals into live dashboards and alerts—no coding, no SCADA project. We land a handful of wires—run/idle, fault, counts, and a few 4–20 mA signals like amps or air pressure—and you get OEE, downtime analytics, and text/email alerts the same day. Maintenance sees issues before they become stoppages, ops sees rate vs target, and management gets real uptime and throughput. It’s secure, browser-based, and priced to come out of a maintenance budget, not a capital request.
-      </p>
-    </div>
 
     <h2 className="mt-10 text-3xl font-bold tracking-tight text-slate-900">
       Bring your machines online—today
