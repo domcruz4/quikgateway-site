@@ -91,7 +91,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold tracking-tight text-slate-900 text-center">
             Bring your industrial systems online today!
           </h2>
-          <p className="mt-2 text-slate-600">
+          <p className="mt-2 text-slate-600 text-center">
             Real-time visibility for legacy equipment. Plug-and-play panel + hosted dashboard. No coding. No SCADA overhaul.
           </p>
 
