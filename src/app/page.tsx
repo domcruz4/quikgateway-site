@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+// Add once at the top of your file:
+import {
+  Play, AlertTriangle, Octagon, Settings2, RefreshCw, CheckCircle2, 
+  Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -25,7 +30,7 @@ export default function Home() {
         </div>
       </section>
 
-{/* Sales Pitch Section – modernized visuals, text unchanged */}
+
 <section className="relative py-20">
   {/* soft background */}
   <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
@@ -49,15 +54,15 @@ export default function Home() {
         <div className="relative">
           <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
           <h3 className="text-base font-semibold text-slate-900">What we capture (day-one wiring)</h3>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-sky-500">
-            <li>Run / Idle (starter aux or PLC bit)</li>
-            <li>Fault active (stacklight/relay)</li>
-            <li>E-Stop tripped</li>
-            <li>Auto / Manual</li>
-            <li>Cycle start / complete (pulses)</li>
-            <li>Good / scrap count</li>
-            <li>Plant air OK</li>
-            <li>Analog status (4–20 mA): motor current, air pressure, temperature, level, flow, vibration/hydraulic</li>
+          <ul className="mt-3 space-y-2 text-slate-700">
+            <li className="flex items-start gap-3"><Play className="mt-0.5 h-5 w-5 text-sky-500" /><span>Run / Idle (starter aux or PLC bit)</span></li>
+            <li className="flex items-start gap-3"><AlertTriangle className="mt-0.5 h-5 w-5 text-amber-500" /><span>Fault active (stacklight/relay)</span></li>
+            <li className="flex items-start gap-3"><Octagon className="mt-0.5 h-5 w-5 text-rose-500" /><span>E-Stop tripped</span></li>
+            <li className="flex items-start gap-3"><Settings2 className="mt-0.5 h-5 w-5 text-slate-600" /><span>Auto / Manual</span></li>
+            <li className="flex items-start gap-3"><RefreshCw className="mt-0.5 h-5 w-5 text-fuchsia-500" /><span>Cycle start / complete (pulses)</span></li>
+            <li className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-5 w-5 text-emerald-600" /><span>Good / scrap count</span></li>
+            <li className="flex items-start gap-3"><Wind className="mt-0.5 h-5 w-5 text-cyan-600" /><span>Plant air OK</span></li>
+            <li className="flex items-start gap-3"><Activity className="mt-0.5 h-5 w-5 text-purple-600" /><span>Analog status (4–20 mA): motor current, air pressure, temperature, level, flow, vibration/hydraulic</span></li>
           </ul>
         </div>
       </div>
@@ -69,11 +74,11 @@ export default function Home() {
         <div className="relative">
           <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
           <h3 className="text-base font-semibold text-slate-900">What you get instantly</h3>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-fuchsia-500">
-            <li>OEE &amp; KPIs: Availability, cycle time, rate, quality</li>
-            <li>Downtime analytics: top stops, duration, time-of-day patterns</li>
-            <li>Alerts: long stops, no-parts running, low air, high temp/amps/vibration</li>
-            <li>Trends: last 24 h / 7 d for amps, pressure, temp, vibration</li>
+          <ul className="mt-3 space-y-2 text-slate-700">
+            <li className="flex items-start gap-3"><Gauge className="mt-0.5 h-5 w-5 text-indigo-600" /><span>OEE &amp; KPIs: Availability, cycle time, rate, quality</span></li>
+            <li className="flex items-start gap-3"><BarChart3 className="mt-0.5 h-5 w-5 text-sky-600" /><span>Downtime analytics: top stops, duration, time-of-day patterns</span></li>
+            <li className="flex items-start gap-3"><BellRing className="mt-0.5 h-5 w-5 text-amber-600" /><span>Alerts: long stops, no-parts running, low air, high temp/amps/vibration</span></li>
+            <li className="flex items-start gap-3"><TrendingUp className="mt-0.5 h-5 w-5 text-emerald-600" /><span>Trends: last 24 h / 7 d for amps, pressure, temp, vibration</span></li>
           </ul>
         </div>
       </div>
@@ -85,10 +90,10 @@ export default function Home() {
         <div className="relative">
           <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
           <h3 className="text-base font-semibold text-slate-900">Why teams like it</h3>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-emerald-500">
-            <li>Maintenance: early warnings, faster root cause, fewer blind spots</li>
-            <li>Operations: rate vs target, bottlenecks by shift/order</li>
-            <li>Management: objective uptime and throughput without a SCADA project</li>
+          <ul className="mt-3 space-y-2 text-slate-700">
+            <li className="flex items-start gap-3"><Wrench className="mt-0.5 h-5 w-5 text-slate-700" /><span>Maintenance: early warnings, faster root cause, fewer blind spots</span></li>
+            <li className="flex items-start gap-3"><Workflow className="mt-0.5 h-5 w-5 text-sky-700" /><span>Operations: rate vs target, bottlenecks by shift/order</span></li>
+            <li className="flex items-start gap-3"><Briefcase className="mt-0.5 h-5 w-5 text-emerald-700" /><span>Management: objective uptime and throughput without a SCADA project</span></li>
           </ul>
         </div>
       </div>
