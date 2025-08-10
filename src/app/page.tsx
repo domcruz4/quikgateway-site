@@ -9,45 +9,52 @@ import {
   Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase
 } from "lucide-react";
 
-// Why Choose features (icons + text)
-type Feature = { icon: LucideIcon; title: string; text: string };
+// Why Choose features (match visuals from the earlier cards)
+type Feature = { icon: LucideIcon; title: string; text: string; color: string };
+
 const features: Feature[] = [
   {
     icon: Zap,
     title: "Plug-and-Play Setup",
     text:
-      "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time."
+      "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time.",
+    color: "text-sky-600",
   },
   {
     icon: BarChart3,
     title: "Real-Time Machine Insights & Alerts",
     text:
-      "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen."
+      "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen.",
+    color: "text-sky-600",
   },
   {
     icon: Code2,
     title: "Zero Coding Required",
     text:
-      "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data."
+      "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data.",
+    color: "text-purple-600",
   },
   {
     icon: Lock,
     title: "Secure & Private",
     text:
-      "Each company gets their own dashboard with secure HTTPS access and custom branding."
+      "Each company gets their own dashboard with secure HTTPS access and custom branding.",
+    color: "text-slate-700",
   },
   {
     icon: Factory,
     title: "Industry 4.0",
     text:
-      "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics."
+      "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics.",
+    color: "text-emerald-600",
   },
   {
     icon: Headphones,
     title: "Expert Support",
     text:
-      "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly."
-  }
+      "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly.",
+    color: "text-indigo-600",
+  },
 ];
 
 export default function Home() {
@@ -238,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose QuikGateway (modern gradient icon style) */}
+      {/* Why Choose QuikGateway — matched visuals */}
       <section className="relative py-20">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
         <div className="relative mx-auto max-w-6xl px-6">
@@ -252,17 +259,26 @@ export default function Home() {
             {features.map((item, i) => (
               <div
                 key={i}
-                className="group relative rounded-2xl border border-transparent bg-white p-6 shadow-sm ring-1 ring-slate-200 
-                transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg
-                hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.5),0_0_25px_-5px_rgba(167,139,250,0.5),0_0_25px_-5px_rgba(34,197,94,0.5)]"
+                className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="mb-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-sky-500 via-purple-500 to-green-500">
-                    <item.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                  </span>
+                {/* same hover glow overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  style={{
+                    background:
+                      "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)",
+                  }}
+                />
+                <div className="relative">
+                  {/* same top gradient bar */}
+                  <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+                  {/* single-color icon like earlier cards */}
+                  <div className="mb-3">
+                    <item.icon className={`h-5 w-5 ${item.color}`} aria-hidden="true" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-slate-600">{item.text}</p>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-2 text-slate-600">{item.text}</p>
               </div>
             ))}
           </div>
