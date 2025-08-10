@@ -5,8 +5,8 @@ import type { LucideIcon } from "lucide-react";
 import {
   Zap, Code2, Lock, Factory, Headphones,
   Play, AlertTriangle, Octagon, Settings2, RefreshCw, CheckCircle2,
-  Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase, ThermometerSnowflake, Flame, Droplet, Fan, Thermometer,
-  Box, Cog, Hammer, ArrowRightLeft, Package, Beaker, Snowflake, AirVent
+  Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase, ThermometerSnowflake, Flame, Droplet, Thermometer,
+  Box, Cog, Hammer, ArrowRightLeft, Package, AirVent
 } from "lucide-react";
 
 
@@ -234,15 +234,12 @@ export default function Home() {
         { icon: ThermometerSnowflake,color: "text-cyan-600",    text: "Chillers & cooling towers — track ΔT, flow, level/conductivity; prevent freeze/overheat and efficiency loss." },
         { icon: Flame,               color: "text-rose-600",    text: "Boilers/steam — lockouts, steam pressure, feedwater level; avoid downtime and safety events." },
         { icon: Droplet,             color: "text-emerald-600", text: "Process pumps — suction/discharge pressure, seal leak, current; spot clogs, cavitation, dry-run." },
-        { icon: Fan,                 color: "text-slate-700",   text: "Central vacuum systems — header vacuum, run/fault; find leaks and over-cycling fast." },
         { icon: Thermometer,         color: "text-orange-600",  text: "Ovens/dryers/furnaces — chamber temp and conveyor/run; stop out-of-spec temps before scrap." },
         { icon: Box,                color: "text-purple-600",  text: "Injection molding — cycle pulses, faults, hydraulic pressure; tighten cycle time, reduce scrap spikes." },
         { icon: Cog,                 color: "text-slate-700",   text: "CNCs (mills/lathes) — cycle/alarms, spindle load; real utilization, tool wear trends, alarm patterns." },
         { icon: Hammer,              color: "text-amber-600",   text: "Presses (stamping/hydraulic) — stroke counts, faults, lube/tonnage signals; detect jams and die issues." },
         { icon: ArrowRightLeft,      color: "text-sky-600",     text: "Conveyors/sorters — run/fault, photoeye jams, motor current; expose bottlenecks and nuisance trips." },
         { icon: Package,             color: "text-emerald-600", text: "Packaging lines — cycle & reject counts, air pressure; OEE clarity and changeover loss visibility." },
-        { icon: Beaker,              color: "text-indigo-600",  text: "Parts washers/CIP — temp, flow, tank level, run/fault; ensure process quality and prevent empty-tank trips." },
-        { icon: Snowflake,           color: "text-cyan-600",    text: "Refrigeration/walk-ins — room/case temp, compressor run/fault, door status; stop product loss early." },
         { icon: AirVent,             color: "text-slate-700",   text: "RTUs/MAUs (HVAC) — fan/compressor run, supply air temp, filter ΔP; cut off-hours runtime and filter issues." },
       ];
       return (
