@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
@@ -214,36 +213,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Overview */}
-      <section className="py-16 px-6 bg-gray-100">
-        <h2 className="text-3xl font-semibold text-center mb-10">Features</h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <Card className="bg-cover bg-center text-white" style={{ backgroundImage: "url('/iiot.jpg')" }}>
-            <CardContent className="p-6 bg-black/60 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">IIoT Monitoring</h3>
-              <p>Track machine status, runtime, and performance from any device.</p>
-            </CardContent>
-          </Card>
+ {/* Features Overview — unified with other cards */}
+<section className="relative py-20">
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
+  <div className="pointer-events-none absolute inset-0">
+    <div className="mx-auto h-24 max-w-6xl bg-gradient-to-r from-sky-200/25 via-fuchsia-200/25 to-emerald-200/25 blur-2xl" />
+  </div>
 
-          <Card className="relative overflow-hidden text-white">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/mqtt.jpg')" }} />
-            <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50 rounded-lg" />
-            <CardContent className="relative z-10 p-6">
-              <h3 className="text-xl font-semibold mb-2">MQTT Integration</h3>
-              <p>Native support for MQTT to send and receive real field signals effortlessly.</p>
-            </CardContent>
-          </Card>
+  <div className="relative mx-auto max-w-6xl px-6">
+    <h2 className="text-3xl font-semibold text-center mb-10">Features</h2>
 
-          <Card className="relative overflow-hidden text-white">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/dashboard.jpg')" }} />
-            <div className="absolute left-0 right-0 top-[17.5%] h-[65%] bg-black/50 rounded-lg" />
-            <CardContent className="relative z-10 p-6">
-              <h3 className="text-xl font-semibold mb-2">Custom Dashboards</h3>
-              <p>Each customer gets their own branded dashboards to view live machine status KPIs in real time.</p>
-            </CardContent>
-          </Card>
+    <div className="grid md:grid-cols-3 gap-6">
+      {/* Card 1 */}
+      <div className="group relative overflow-hidden rounded-2xl border bg-white/90 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        {/* hover glow overlay */}
+        <div
+          className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }}
+        />
+        {/* image header */}
+        <div className="relative h-40">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/iiot.jpg')" }} />
         </div>
-      </section>
+        {/* content */}
+        <div className="relative p-6">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-xl font-semibold mb-2 text-slate-900">IIoT Monitoring</h3>
+          <p className="text-slate-700">Track machine status, runtime, and performance from any device.</p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="group relative overflow-hidden rounded-2xl border bg-white/90 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        <div
+          className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }}
+        />
+        <div className="relative h-40">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/mqtt.jpg')" }} />
+        </div>
+        <div className="relative p-6">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-xl font-semibold mb-2 text-slate-900">MQTT Integration</h3>
+          <p className="text-slate-700">Native support for MQTT to send and receive real field signals effortlessly.</p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="group relative overflow-hidden rounded-2xl border bg-white/90 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        <div
+          className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }}
+        />
+        <div className="relative h-40">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/dashboard.jpg')" }} />
+        </div>
+        <div className="relative p-6">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-xl font-semibold mb-2 text-slate-900">Custom Dashboards</h3>
+          <p className="text-slate-700">Each customer gets their own branded dashboards to view live machine status KPIs in real time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose QuikGateway — matched visuals */}
       <section className="relative py-20">
