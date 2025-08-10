@@ -25,6 +25,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sales Pitch Section */}
+<section className="relative py-16">
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
+  <div className="relative mx-auto max-w-6xl px-6">
+    {/* Pitch card */}
+    <div className="rounded-2xl border bg-white p-6 shadow-sm ring-1 ring-slate-200">
+      <p className="text-lg leading-relaxed text-slate-800">
+        QuikGateway drops into any brownfield line and turns your machine signals into live dashboards and alerts—no coding, no SCADA project. We land a handful of wires—run/idle, fault, counts, and a few 4–20 mA signals like amps or air pressure—and you get OEE, downtime analytics, and text/email alerts the same day. Maintenance sees issues before they become stoppages, ops sees rate vs target, and management gets real uptime and throughput. It’s secure, browser-based, and priced to come out of a maintenance budget, not a capital request.
+      </p>
+    </div>
+
+    <h2 className="mt-10 text-3xl font-bold tracking-tight text-slate-900">
+      Bring your machines online—today
+    </h2>
+    <p className="mt-2 text-slate-600">
+      Real-time visibility for brownfield equipment. Plug-and-play panel + hosted dashboard. No coding. No SCADA overhaul.
+    </p>
+
+    <div className="mt-8 grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">What we capture (day-one wiring)</h3>
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
+          <li>Run / Idle (starter aux or PLC bit)</li>
+          <li>Fault active (stacklight/relay)</li>
+          <li>E-Stop tripped</li>
+          <li>Auto / Manual</li>
+          <li>Cycle start / complete (pulses)</li>
+          <li>Good / scrap count</li>
+          <li>Plant air OK</li>
+          <li>Analog health (4–20 mA): motor current, air pressure, critical temperature, vibration/hydraulic</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">What you get instantly</h3>
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
+          <li>OEE &amp; KPIs: Availability, cycle time, rate, quality</li>
+          <li>Downtime analytics: top stops, duration, time-of-day patterns</li>
+          <li>Alerts: long stops, no-parts running, low air, high temp/amps/vibration</li>
+          <li>Trends: last 24 h / 7 d for amps, pressure, temp, vibration</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="text-base font-semibold text-slate-900">Why teams like it</h3>
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
+          <li>Maintenance: early warnings, faster root cause, fewer blind spots</li>
+          <li>Operations: rate vs target, bottlenecks by shift/order</li>
+          <li>Management: objective uptime and throughput without a SCADA project</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* Features Overview */}
       <section className="py-16 px-6 bg-gray-100">
         <h2 className="text-3xl font-semibold text-center mb-10">Features</h2>
