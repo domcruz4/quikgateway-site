@@ -25,54 +25,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sales Pitch Section */}
-<section className="relative py-16">
+{/* Sales Pitch Section – modernized visuals, text unchanged */}
+<section className="relative py-20">
+  {/* soft background */}
   <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
-  <div className="relative mx-auto max-w-6xl px-6">
+  <div className="pointer-events-none absolute inset-0">
+    <div className="mx-auto h-24 max-w-6xl bg-gradient-to-r from-sky-200/25 via-fuchsia-200/25 to-emerald-200/25 blur-2xl" />
+  </div>
 
-    <h2 className="mt-10 text-3xl font-bold tracking-tight text-slate-900">
+  <div className="relative mx-auto max-w-6xl px-6">
+    <h2 className="text-4xl font-bold tracking-tight text-slate-900">
       Bring your industrial systems online today!
     </h2>
     <p className="mt-2 text-slate-600">
       Real-time visibility for legacy equipment. Plug-and-play panel + hosted dashboard. No coding. No SCADA overhaul.
     </p>
 
-    <div className="mt-8 grid gap-8 md:grid-cols-3">
-      <div>
-        <h3 className="text-base font-semibold text-slate-900">What we capture (day-one wiring)</h3>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
-          <li>Run / Idle (starter aux or PLC bit)</li>
-          <li>Fault active (stacklight/relay)</li>
-          <li>E-Stop tripped</li>
-          <li>Auto / Manual</li>
-          <li>Cycle start / complete (pulses)</li>
-          <li>Good / scrap count</li>
-          <li>Plant air OK</li>
-          <li>Analog health (4–20 mA): motor current, air pressure, critical temperature, vibration/hydraulic</li>
-        </ul>
+    <div className="mt-10 grid gap-6 md:grid-cols-3">
+      {/* Card 1 */}
+      <div className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        <div className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+             style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }} />
+        <div className="relative">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-base font-semibold text-slate-900">What we capture (day-one wiring)</h3>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-sky-500">
+            <li>Run / Idle (starter aux or PLC bit)</li>
+            <li>Fault active (stacklight/relay)</li>
+            <li>E-Stop tripped</li>
+            <li>Auto / Manual</li>
+            <li>Cycle start / complete (pulses)</li>
+            <li>Good / scrap count</li>
+            <li>Plant air OK</li>
+            <li>Analog status (4–20 mA): motor current, air pressure, temperature, level, flow, vibration/hydraulic</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <h3 className="text-base font-semibold text-slate-900">What you get instantly</h3>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
-          <li>OEE &amp; KPIs: Availability, cycle time, rate, quality</li>
-          <li>Downtime analytics: top stops, duration, time-of-day patterns</li>
-          <li>Alerts: long stops, no-parts running, low air, high temp/amps/vibration</li>
-          <li>Trends: last 24 h / 7 d for amps, pressure, temp, vibration</li>
-        </ul>
+      {/* Card 2 */}
+      <div className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        <div className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+             style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }} />
+        <div className="relative">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-base font-semibold text-slate-900">What you get instantly</h3>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-fuchsia-500">
+            <li>OEE &amp; KPIs: Availability, cycle time, rate, quality</li>
+            <li>Downtime analytics: top stops, duration, time-of-day patterns</li>
+            <li>Alerts: long stops, no-parts running, low air, high temp/amps/vibration</li>
+            <li>Trends: last 24 h / 7 d for amps, pressure, temp, vibration</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <h3 className="text-base font-semibold text-slate-900">Why teams like it</h3>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
-          <li>Maintenance: early warnings, faster root cause, fewer blind spots</li>
-          <li>Operations: rate vs target, bottlenecks by shift/order</li>
-          <li>Management: objective uptime and throughput without a SCADA project</li>
-        </ul>
+      {/* Card 3 */}
+      <div className="group relative rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg">
+        <div className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+             style={{ background: "radial-gradient(60% 60% at 50% 0%, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.14) 45%, rgba(34,197,94,0.12) 95%)" }} />
+        <div className="relative">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 mb-4" />
+          <h3 className="text-base font-semibold text-slate-900">Why teams like it</h3>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700 marker:text-emerald-500">
+            <li>Maintenance: early warnings, faster root cause, fewer blind spots</li>
+            <li>Operations: rate vs target, bottlenecks by shift/order</li>
+            <li>Management: objective uptime and throughput without a SCADA project</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* Features Overview */}
