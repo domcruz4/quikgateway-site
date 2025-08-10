@@ -31,10 +31,10 @@ export default function Home() {
   <div className="relative mx-auto max-w-6xl px-6">
 
     <h2 className="mt-10 text-3xl font-bold tracking-tight text-slate-900">
-      Bring your machines online—today
+      Bring your industrial systems online today!
     </h2>
     <p className="mt-2 text-slate-600">
-      Real-time visibility for brownfield equipment. Plug-and-play panel + hosted dashboard. No coding. No SCADA overhaul.
+      Real-time visibility for legacy equipment. Plug-and-play panel + hosted dashboard. No coding. No SCADA overhaul.
     </p>
 
     <div className="mt-8 grid gap-8 md:grid-cols-3">
