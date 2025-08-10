@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { Zap, Code2, Lock, Factory, Headphones } from "lucide-react";
 // Add once at the top of your file:
 import {
   Play, AlertTriangle, Octagon, Settings2, RefreshCw, CheckCircle2, 
   Wind, Activity, Gauge, BarChart3, BellRing, TrendingUp, Wrench, Workflow, Briefcase
 } from "lucide-react";
+
 
 export default function Home() {
   return (
@@ -140,7 +142,8 @@ export default function Home() {
         </div>
       </section>
 
-{/* Why Choose QuikGateway (modern visual style) */}
+
+{/* Why Choose QuikGateway (modern gradient icon style) */}
 <section className="relative py-20">
   <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
   <div className="relative mx-auto max-w-6xl px-6">
@@ -153,37 +156,37 @@ export default function Home() {
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {[
         {
-          icon: "⚡",
+          icon: Zap,
           title: "Plug-and-Play Setup",
           text:
             "Get up and running in a day with our pre-configured IIoT gateway panels. Just land your field signal wires and you will be up and running in no time."
         },
         {
-          icon: "📊",
+          icon: BarChart3,
           title: "Real-Time Machine Insights & Alerts",
           text:
             "Monitor system status and get real timie alerts instantly from your phone, desktop, or on a TV screen."
         },
         {
-          icon: "💻",
+          icon: Code2,
           title: "Zero Coding Required",
           text:
             "Designed for plant operations, management and maintenance, not programmers. No code. No complexity. Just data."
         },
         {
-          icon: "🔒",
+          icon: Lock,
           title: "Secure & Private",
           text:
             "Each company gets their own dashboard with secure HTTPS access and custom branding."
         },
         {
-          icon: "🏭",
+          icon: Factory,
           title: "Industry 4.0",
           text:
             "Boost productivity by automating and optimizing processes. Reduces downtime through predictive maintenance. Improves safety by monitoring hazardous conditions. Enables smarter decisions with real time data analytics."
         },
         {
-          icon: "🤝",
+          icon: Headphones,
           title: "Expert Support",
           text:
             "Run by automation professionals who understand the industry. We help you set up so you can start viewing valuable data quickly."
@@ -195,7 +198,9 @@ export default function Home() {
           transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg
           hover:shadow-[0_0_25px_-5px_rgba(56,189,248,0.5),0_0_25px_-5px_rgba(167,139,250,0.5),0_0_25px_-5px_rgba(34,197,94,0.5)]"
         >
-          <div className="mb-4 text-3xl">{item.icon}</div>
+          <div className="mb-4">
+            <item.icon className="h-8 w-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-purple-500 to-green-500" />
+          </div>
           <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
           <p className="mt-2 text-slate-600">{item.text}</p>
         </div>
